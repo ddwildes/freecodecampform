@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="form.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">
+      <h1 id="title" class ="item">Useless Form</h1>
+     </div>
+     <div  class ="description">
+      <p id ='description' class="item">This is just a basic form that does nothing (as of now!)</p>
+    </div>
+      <div class="form">
+      <form id="survey-form">
+        <div class = "item-1 item">
+        <label id="name-label" for="name" class="labels">Name:</label>
+        <input type="text" class="better" id="name" required placeholder="Enter first and last name">
+        </div>
+        <div class ="item-2 item">
+        <label id="email-label" class="labels" for="email">Email:</label>
+        <input type="email" id="email" class="better" required placeholder="Ex: epic@gmail.com">
+        </div>
+        <div class = "item-3 item">
+        <label id="number-label" class="labels" for="number">How are you feeling?:</label>
+        <input type="number" min="1" class="better" max="10" id="number" required placeholder="Enter number 1-10">
+        </div>
+        <div class = "item-4 item">
+        <label class ="labels" for="dropdown" class="better">Select how cool you are:</label>
+        <select id="dropdown">
+          <option class="textalign" value="">-Please select an option-</option>
+          <option value="not">Not</option>
+          <option value="kinda">Kinda</option>
+          <option value="regular">Regular</option>
+          <option value="super">Super</option>
+        </select>
+        </div>
+        <div class = "flex">
+        <p class="labels space">
+        Just select a word you like:
+        </p>
+        <div class= "item">
+          <input type="radio" name="word" id='epic' value="epic" checked><label for="epic">epic</label>
+          <input type="radio" name="word" id='cool' value="cool"><label for="cool">cool</label>
+          <input type="radio" name="word" id='meh' value="meh"><label for="meh">meh</label>
+          </div>
+        </div>
+        <div class="item-7 item labels">
+        World's worst sport?:
+        </div>
+          <div class="item-8 item">
+          <input type="checkbox" id ='soccer' name="soccer" value="sport" checked>
+            <label for="soccer">soccer</label>
+            </div>
+          <div class="item-9 item">
+          <input type="checkbox" id ='tennis' name="tennis" value="sport">
+            <label for="tennis">tennis</label>
+            </div>
+          <div class="item-10 item">
+          <input type="checkbox" id ='cricket' name="cricket" value="sport">
+            <label for="cricket">cricket</label>
+            </div>
+            <div class = "item-11 item">
+              <div class = "item-12 item labels">
+       <label for="textArea">Comments?:</label>
+       </div>
+       <div class = "item-13 item">
+        <textarea id="textArea" name="comments" rows="5" cols="20"></textarea>
+          </div>
+          </div>
+          <div class = "center sticky">
+          <button id ="submit" class="submit" type="submit">Done</button>
+          </div>
+      </form>
+      </div>
+    </div>
+  </body>
+  </html>
